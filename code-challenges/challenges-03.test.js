@@ -63,7 +63,17 @@ Write a function named sortByLength that takes in an array of strings and return
 ------------------------------------------------------------------------------------------------ */
 
 const sortByLength = (arr) => {
-  // Solution code here...
+  const strings = (string1, string2) => {
+    if(string1.length>string2.length){
+      return 1;
+    }else if(string1.length<string2.length){
+      return -1;
+    }else{
+      return 0;
+    }
+};
+arr.sort(strings);
+return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
