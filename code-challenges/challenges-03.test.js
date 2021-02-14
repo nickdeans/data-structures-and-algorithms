@@ -28,16 +28,16 @@ Write a function named sortBackwards that takes in an array of numbers and retur
 ------------------------------------------------------------------------------------------------ */
 
 const sortBackwards = (arr) => {
-  const sortedNumbers = (leftNum, rightNum) => {
-    if(leftNum > rightNum){
+  const sortNumbers = (leftNumber, rightNumber) => {
+    if(leftNumber > rightNumber){
       return -1;
-    }else if (leftNum < rightNum){
+    }else if (leftNumber < rightNumber){
       return 1;
     }else {
       return 0;
     }
   };
-  arr.sort(sortedNumbers);
+  arr.sort(sortNumbers);
   return arr;
 };
 
@@ -63,7 +63,7 @@ Write a function named sortByLength that takes in an array of strings and return
 ------------------------------------------------------------------------------------------------ */
 
 const sortByLength = (arr) => {
-  const strings = (string1, string2) => {
+  const stringSort = (string1, string2) => {
     if(string1.length>string2.length){
       return 1;
     }else if(string1.length<string2.length){
@@ -72,7 +72,7 @@ const sortByLength = (arr) => {
       return 0;
     }
 };
-arr.sort(strings);
+arr.sort(stringSort);
 return arr;
 };
 
@@ -85,7 +85,17 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetizeBetter = (arr) => {
-  // Solution code here...
+  const sortStrings = (leftStr, rightStr) => {
+    if(leftStr.toLowerCase()>rightStr.toLowerCase()){
+      return 1;
+    }else if(leftStr.toLowerCase()<rightStr.toLowerCase()){
+      return -1;
+    }else{
+      return 0;
+    }
+  };
+  arr.sort(sortStrings);
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
