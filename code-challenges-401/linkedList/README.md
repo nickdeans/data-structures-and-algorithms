@@ -17,3 +17,6 @@ I took the approach of completing the asked challenge with neccessary functions 
 - Insert()
 - Include ()
 - toStirng()
+- Append()
+- insertBefore()
+- insertAfter()
