@@ -57,6 +57,41 @@ class LinkedList {
         return lastString += 'null'
     }
 
+    append(value) {
+        let current = this.head;
+
+        while(current.next){
+            current = current.next;
+        }
+        current.next = new Node(value);
+    }
+
+    insertBefore(value, newVal) {
+        let current = this.head;
+        if(current.value === newVal){
+            this.insert(value);
+        }else{
+            while(current.next.value !== newVal) {
+                current = current.next;
+            }
+            let temp = new Node(value);
+            temp.next = current.next;
+            current.next = temp;
+        }
+    }
+
+    insertAfter(value, newValue) {
+        let current = this.head;
+        while(current.value !== newValue){
+            current = current.next;
+        }
+        let temp = new Node(value);
+        temp.next = current.next;
+        current.next = temp;
+    }
+
+
+
 }
 
 module.exports = {
