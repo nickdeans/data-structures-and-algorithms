@@ -56,5 +56,54 @@ describe('testing linked list', () => {
     });
 });
 
+describe('testing linked list class that takes in a number k', () => {
+    it('Should return invalid input if k is greater than length of list', () => {
+        const ll = new linkedListTwo;
+        ll.insert(4);
+        ll.insert(3);
+        ll.insert(2);
+        ll.insert(1);
+
+    expect(ll.nthValueAtEnd(5)).toEqual('invalid input')
+    })
+
+    it('Should return invalid input if k is length', () => {
+        const ll = new linkedListTwo;
+        ll.insert(4);
+        ll.insert(3);
+        ll.insert(2);
+        ll.insert(1);
+
+    expect(ll.nthValueAtEnd(4)).toEqual('invalid input')
+    })
+
+    it('Should return invalid input if k is negative number', () => {
+        const ll = new linkedListTwo;
+        ll.insert(4);
+        ll.insert(3);
+        ll.insert(2);
+        ll.insert(1);
+
+    expect(ll.nthValueAtEnd(-2)).toEqual('invalid input')
+    })
+
+    it('Should return value if linked list has one node and k=0', () => {
+        const ll = new linkedListTwo;
+        ll.insert(1);
+
+        expect(ll.nthValueAtEnd(0)).toEqual(1);
+    })
+
+    it('Should return invalid input if k is greater than length of list', () => {
+        const ll = new linkedListTwo;
+        ll.insert(4);
+        ll.insert(3);
+        ll.insert(2);
+        ll.insert(1);
+
+    expect(ll.nthValueAtEnd(2)).toEqual(2);
+    })
+})
+
 
 

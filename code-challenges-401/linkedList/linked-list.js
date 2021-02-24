@@ -90,8 +90,20 @@ class LinkedList {
         current.next = temp;
     }
 
-
-
+    nthValueAtEnd(k) {
+        let llArr = [];
+        let current = this.head;
+        while(current) {
+            llArr.push(current.value);
+            current = current.next;
+        }
+        llArr.reverse();
+        if(k>=llArr.length || k<0){
+            return 'invalid input';
+        }else{
+            return llArr[k];
+        }
+    }
 }
 
 module.exports = {
