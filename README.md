@@ -63,5 +63,6 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 5. [Code Challenge 05](linked-list.js)
 6. [Code Challenge 06](linked-list.js)
 7. [Code Challenge 07](linked-list.js)
+8. [Code Challenge 08](ll-zip.js)
 
 
