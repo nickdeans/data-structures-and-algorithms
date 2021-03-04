@@ -14,4 +14,4 @@ Big O space is O(n) and time is on O(n)
 ## API 
 
 ## UML
-![UML](../assets/bracket-validation.png)
+![UML](../../assets/bracket-validation.png)
