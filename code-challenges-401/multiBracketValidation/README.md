@@ -9,9 +9,9 @@ Square Brackets : []
 Curly Brackets : {}
 
 ## Approach and Efficiency 
-I took the approach of completing the asked challenge with neccessary functions and methods. Big O space is O(1) and time is on O(n)
+Big O space is O(n) and time is on O(n)
 
 ## API 
 
 ## UML
-![UML](./assets/bracket-validation.png)
+![UML](../assets/bracket-validation.png)
