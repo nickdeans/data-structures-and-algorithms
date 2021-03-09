@@ -19,6 +19,6 @@ I created a Node class with tree data structures. I utilized methods to traverse
 
 ## API
 - inOrder()
-- preOrder()
+- preOrder();
 - postOrder();
 - findMaxValue();

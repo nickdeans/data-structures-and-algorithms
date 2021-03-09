@@ -100,7 +100,7 @@ tree.root.right.right = new Node(76);
 console.log(tree.preOrder());
 console.log(tree.inOrder());
 console.log(tree.postOrder());
-console.log(tree.findMaxValue())
+console.log(tree.findMaxValue());
 
 // class BinarySearchTree {
 //     constructor() {
