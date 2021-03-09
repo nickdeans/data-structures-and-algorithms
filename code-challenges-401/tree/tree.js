@@ -86,6 +86,26 @@ class BinaryTree {
         preOrderTraversal(current);
         return max;
     }
+
+    breadth() {
+        let current = null;
+        let queue = [];
+        let newArray= [];
+
+        queue.unshift(this.root);
+
+        while(queue.length){
+            current = queue.pop();
+            newArray.push(current.value);
+            if(current.left){
+                queue.unshift(current.left)
+            }
+            if(current.right){
+                queue.unshift(current.right);
+            }
+        }
+        return newArray;
+    }
 }
 
 const tree = new BinaryTree();
@@ -101,6 +121,7 @@ console.log(tree.preOrder());
 console.log(tree.inOrder());
 console.log(tree.postOrder());
 console.log(tree.findMaxValue());
+console.log(tree.breadth());
 
 // class BinarySearchTree {
 //     constructor() {
@@ -132,7 +153,7 @@ console.log(tree.findMaxValue());
 // };
 
 module.exports = {
-    Node,
-    BinarySearchTree,
-    BinaryTree
+    node: Node,
+    // BinarySearchTree,
+    tree: BinaryTree
 }
