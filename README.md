@@ -67,5 +67,6 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 15. [Code Challenge 15](tree.js)
 16. [Code Challenge 16](tree.js)
 17. [Code Challenge 17](tree.js)
+18. [Code Challenge 18](fizz-buzz-tree.js)
 
 
