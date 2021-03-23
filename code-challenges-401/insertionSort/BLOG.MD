@@ -2,7 +2,7 @@
 Insertion Sort is a function that sorts through an array and takes the values of the array and returns the values from lowest to highest.
 
 ## Pseudocode
-![Insertion Sort Pseudo](./assets/insertion-sort-pseudo.png)
+![Insertion Sort Pseudo](../assets/insertion-sort-pseudo.png)
 
 ## Step Through Process
 - Sample Array [8,4,23,42,16,15]
@@ -18,4 +18,4 @@ Insertion Sort is a function that sorts through an array and takes the values of
 - Step 5 - On the fourth iteration of the array, i = 5, j = 4, and arr[i] = 15. The variables all have values and enter into the While loop. At the conclusion of the loop, the loop will evaluate as true and arr[i] will now have the value of 42. The array will continue to loop until the end. The loop will then be broken at j = j -1 and arr[j + 1] will equal the next value of the array ultimately resulting in [4,8,15,16,23,42].
 
 ## Visual 
-![Insertion Sort](./assets/insertion-sort.png)
+![Insertion Sort](../assets/insertion-sort.png)
