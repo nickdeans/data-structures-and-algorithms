@@ -10,7 +10,7 @@ Big O Time: O(n^2)
 
 
 ## Pseudocode
-![Insertion Sort Pseudo](./assets/insertion-sort-pseudo.png)
+![Insertion Sort Pseudo](../assets/insertion-sort-pseudo.png)
 
 ## Solution
-![Insertion Sort Visual](./assets/insertion-sort.png)
+![Insertion Sort Visual](../assets/insertion-sort.png)
