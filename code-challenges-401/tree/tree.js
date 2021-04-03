@@ -123,6 +123,37 @@ console.log(tree.postOrder());
 console.log(tree.findMaxValue());
 console.log(tree.breadth());
 
+// // K-Ary Tree Traversal
+//   // @param callback {function}
+//   traverseIteratively(callback) {
+//     let current = null;
+//     let queue = [];
+//     queue.unshift(this.root);
+//     while(queue.length){
+//       current = queue.pop();
+//       // console.log(current.value);
+//       callback(current.value);
+//       for(let i = 0; i < current.children.length; i++){
+//         if(current.children[i]){
+//           queue.unshift(current.children[i]);
+//           }
+//       }
+//     }
+//   }
+//   // @param callback {function}
+//   traverseRecursively(callback) {
+//     let _traverse = (node) => {
+//       callback(node.value);
+//       node.children.forEach(child => {
+//         if(child){
+//           _traverse(child)
+//         }
+//       })
+//     }
+//     _traverse(this.root);
+//   }
+// }
+
 // class BinarySearchTree {
 //     constructor() {
 //         this.root = null;
